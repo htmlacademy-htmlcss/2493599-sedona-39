@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Татарникова Татьяна](https://up.htmlacademy.ru/htmlcss/39/user/2493599).
-* Наставник: `Неизвестно`.
+- Студент: [Татарникова Татьяна](https://up.htmlacademy.ru/htmlcss/39/user/2493599).
+- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 

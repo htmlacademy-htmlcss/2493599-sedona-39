@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-list-item">
+            <a class="header-list-link" href="#">
+              <img class="header-logo" src="#" alt="Логотип Седоны"></a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#">Главная</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#">О Седоне</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="header-nav-list header-nav-user">
+          <li class="header-list-item">
+            <a class="header-list-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="#"><span class="visually-hidden">Добавить в избранное</span></a>
+          </li>
+          <li class="header-list-item">
+            <button class="button" type="button">Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="search-hotel">
+        <h1 class="search-hotel-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+        <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="infrastructure-filters">
+            <h3 class="infrastructure-filters-title">Инфраструктура:</h3>
+            <ul class="infrastructure-filters-list">
+              <li class="infrastructure-filters-item">
+                <label><input class="" type="checkbox" name="" value="" checked>Бассейн</label>
+              </li>
+              <li class="infrastructure-filters-item">
+                <label><input class="" type="checkbox" name="" value="" checked>Парковка</label>
+              </li>
+              <li class="infrastructure-filters-item">
+                <label><input class="" type="checkbox" name="" value="">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="accommodation-choice">
+            <h3 class="accommodation-choice-title">Тип жилья:</h3>
+            <ul class="accommodation-choice-list">
+              <li class="accommodation-choice-item">
+                <label><input class="" type="radio" name="" value="" checked>Гостиница</label>
+              </li>
+              <li class="accommodation-choice-item">
+                <label><input class="" type="radio" name="" value="">Мотель</label>
+              </li>
+              <li class="accommodation-choice-item">
+                <label><input class="" type="radio" name="" value="">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+      </section>
+
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-descroption">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subsription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="subsription-form-input" placeholder="Ваш e-mail">
+          <button type="submit" class="button">Подписаться</button>
+        </form>
+      </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+      <ul class="footer-social-list">
+        <li class="footer-social-item"><a class="footer-social-link" href="#"></a>
+          <span="visually-hidden">VK</span>
+        </li>
+        <li class="footer-social-item"><a class="footer-social-link" href="#"></a>
+          <span="visually-hidden">Telegram</span>
+        </li>
+        <li class="footer-social-item"><a class="footer-social-link" href="#"></a>
+          <span="visually-hidden">YouTube</span>
+        </li>
+      </ul>
+      <a class="footer-info" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="https://htmlacademy.ru/">
+        <img src="#" alt="Логотип HTML-Academy" />
+      </a>
+    </footer>
+  </body>

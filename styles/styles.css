@@ -1,0 +1,307 @@
+@font-face{
+  font-family:"PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+/* попытка создания обертки с тенью*/
+.wrapper{
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+/* стилизация кнопок */
+.button{
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 34px;
+  text-decoration: none;
+  text-align: center;
+}
+.button-accent{
+  background-color: #82B3D3;
+}
+.button-select{
+  background-color: #7db54f;
+}
+.button-reset{
+  background-color: transparent;
+}
+.large-button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+/* задаем общие стили для заголовков и текстов*/
+.title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+.small-title{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.small-description{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+.description{
+  text-align: center;
+}
+/* стили для header */
+.header{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.navigation-item{
+  list-style-type: none;
+}
+.navigation-link{
+  text-decoration: none;
+  color: inherit;
+}
+/* стили для главной страницы */
+/* не получилось сделать декор бантик */
+.hero{
+  background-image: url("../images/background-images/background-welcome.jpg"), url("../images/background-images/background-welcome-decor.jpg");
+  background-size: cover, 100% auto;
+  background-position: left top, left bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #073757;
+  color: #ffffff;
+}
+/* преимущества */
+.services-icon{
+  color: #83b3d3;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.house-icon{
+  background-image: url("../images/house-icon.svg");
+  width: 75px;
+  height: 72px;
+}
+.food-icon{
+  background-image: url("../images/food-icon.svg");
+  width: 74px;
+  height: 70px;
+}
+.souvenir-icon{
+  background-image: url("../images/souvenir-icon.svg");
+  width: 64px;
+  height: 76px;
+}
+/* стили для input */
+.field{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+/* убираем маркеры списков */
+.advantages-list,
+.services-list,
+.breadcrumbs,
+.infrastructure-list,
+.accommodation-list,
+.catalog-view-item,
+.catalog-list,
+.pagination {
+  list-style-type: none;
+}
+/* задаем цвет фона для блока с преимуществами */
+.image-dark{
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+.image-medium{
+  background-color: #83b3d31f;
+}
+.image-light{
+  background-color: #83b3d333;
+}
+/* поиск гостиницы */
+.search-hotel{
+  color: #ffffff;
+  background-color: #83b3d3;
+  background-image: url(../images/background-images/background-catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search-hotel-title{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+/* хлебные крошки */
+.breadcrumbs{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.breadcrumbs-link{
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumbs-image{
+  background-image: url("../images/main-page-icon.svg");
+  background-repeat: no-repeat;
+}
+.back-icon{
+  background-image: url("../images/back.svg");
+  background-repeat: no-repeat;
+}
+/* фильтры поиска */
+.parameters-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.parameters-list{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.select-control{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+.catalog-view{
+  width: 48px;
+  height: 48px;
+  display: block;
+  background-position: center center;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+/* способ отображения поисковой выдачи */
+.catalog-table-view{
+  background-image: url("../images/table-view.svg");
+  background-repeat: no-repeat;
+}
+.catalog-slideshow-view{
+  background-image: url("../images/slidershow.svg");
+  background-repeat: no-repeat;
+}
+.catalog-list-view{
+  background-image: url("../images/list-view.svg");
+  background-repeat: no-repeat;
+}
+.catalog-view-selected{
+  border: 2px solid #000000;
+}
+/* результаты поиска */
+.catalog-list-link-title{
+  text-decoration: none;
+}
+.catalog-hotel-title{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.description-hotel{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+.hotel-rating{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 9px 22px 8px 23px;
+  background-color: #f2f2f2;
+  max-width: 140px;
+  text-align: center;
+}
+/* подписка */
+.subscription-main-page{
+  color: #ffffff;
+  background-image: url(../images/background-images/background-subscribe.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #83b3d3;
+}
+.subscription-main-title{
+  color: #ffffff;
+}
+.subscription-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+/* стили для footer */
+.social-list{
+  list-style-type: none;
+}
+.social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #83b3d3;
+}
+.social-vk {
+  background-image: url("../images/social-vk.svg");
+  width: 24px;
+  height: 14px;
+}
+.social-telegram {
+  background-image: url("../images/social-telegram.svg");
+  width: 18px;
+  height: 15px;
+}
+.social-youtube {
+  background-image: url("../images/social-youtube.svg");
+  width: 22px;
+  height: 17px;
+}
+.contact{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}

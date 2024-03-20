@@ -68,16 +68,18 @@
                   <legend class="parameters-title">Инфраструктура:</legend>
                   <ul class="parameters-list">
                     <li class="parameters-item">
-                      <label for="swimming-pool"><input class="infrastructure-item" type="checkbox" name="swimming-pool"
-                          id="swimming-pool" checked>Бассейн</label>
+                      <label class="infrastructure-label" for="swimming-pool"><input class="infrastructure-item"
+                          type="checkbox" name="swimming-pool" id="swimming-pool" checked><span
+                          class="check-style"></span>Бассейн</label>
                     </li>
                     <li class="parameters-item">
-                      <label for="parking"><input class="infrastructure-item" type="checkbox" name="parking"
-                          id="parking" checked>Парковка</label>
+                      <label class="infrastructure-label" for="parking"><input class="infrastructure-item"
+                          type="checkbox" name="parking" id="parking" checked><span
+                          class="check-style"></span>Парковка</label>
                     </li>
                     <li class="parameters-item">
-                      <label for="wi-fi"><input class="infrastructure-item" type="checkbox" name="wi-fi"
-                          id="wi-fi">Wi-Fi</label>
+                      <label class="infrastructure-label" for="wi-fi"><input class="infrastructure-item" type="checkbox"
+                          name="wi-fi" id="wi-fi"><span class="check-style"></span>Wi-Fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -85,16 +87,17 @@
                   <legend class="parameters-title">Тип жилья:</legend>
                   <ul class="parameters-list">
                     <li class="parameters-item">
-                      <label><input class="accommodation-item" type="radio" name="accommodation" value="hotel"
-                          checked>Гостиница</label>
+                      <label class="accommodation-label"><input class="accommodation-item" type="radio"
+                          name="accommodation" value="hotel" checked><span class="radio-style"></span>Гостиница</label>
                     </li>
                     <li class="parameters-item">
-                      <label for="hotel"><input class="accommodation-item" type="radio" name="accommodation"
-                          value="motel" id="hotel">Мотель</label>
+                      <label class="accommodation-label" for="hotel"><input class="accommodation-item" type="radio"
+                          name="accommodation" value="motel" id="hotel"><span class="radio-style"></span>Мотель</label>
                     </li>
                     <li class="parameters-item">
-                      <label for="apartments"><input class="accommodation-item" type="radio" name="accommodation"
-                          value="apartments" id="apartments">Апартаменты</label>
+                      <label class="accommodation-label" for="apartments"><input class="accommodation-item" type="radio"
+                          name="accommodation" value="apartments" id="apartments"><span
+                          class="radio-style"></span>Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -143,61 +146,61 @@
         <section class="catalog-result">
           <ul class="catalog-list">
             <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">
+              <a class="catalog-list-link" tabindex="-1" href="#">
                 <img class="catalog-hotel-image" src="images/catalog/hotel-1.jpg" width="300" height="212"
                   alt="Вид на звездное небо из скалистого ущелья">
               </a>
-              <a class="catalog-list-link-title" href="#">
+              <a class="catalog-list-link-title" tabindex="-1" href="#">
                 <h3 class="catalog-hotel-title">Amara Resort & Spa</h3>
               </a>
               <p class="description-hotel">Гостиница</p>
               <b class="price">От 4000 ₽</b>
-              <a class="button button-main" tabindex="-1" href="#">Подробнее</a>
+              <a class="button button-main" href="#">Подробнее</a>
               <button class="button button-accent catalog-button-favorite" type="submit">В избранное</button>
               <p class="stars stars-4"><span class="visually-hidden">4 звезды</span></p>
               <p class="hotel-rating">Рейтинг: 8,5</p>
             </li>
             <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">
+              <a class="catalog-list-link" tabindex="-1" href="#">
                 <img class="catalog-hotel-image" src="images/catalog/hotel-2.jpg" width="300" height="212"
                   alt="Скалы, грозовые тучи и радуга в небе">
               </a>
-              <a class="catalog-list-link-title" href="#">
+              <a class="catalog-list-link-title" tabindex="-1" href="#">
                 <h3 class="catalog-hotel-title">Villas at Poco Diablo</h3>
               </a>
               <p class="description-hotel">Гостиница</p>
               <b class="price">От 5000 ₽</b>
-              <a class="button button-main" tabindex="-1" href="#">Подробнее</a>
+              <a class="button button-main" href="#">Подробнее</a>
               <button class="button button-select checked" type="submit">В избранном</button>
               <p class="stars stars-4"><span class="visually-hidden">4 звезды</span></p>
               <p class="hotel-rating">Рейтинг: 9,2</p>
             </li>
             <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">
+              <a class="catalog-list-link" tabindex="-1" href="#">
                 <img class="catalog-hotel-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
                   alt="Знаменитые красные скалы Седоны, ясное голубое небо">
               </a>
-              <a class="catalog-list-link-title" href="#">
+              <a class="catalog-list-link-title" tabindex="-1" href="#">
                 <h3 class="catalog-hotel-title">Desert Quail Inn</h3>
               </a>
               <p class="description-hotel">Гостиница</p>
               <b class="price">От 2500 ₽</b>
-              <a class="button button-main" tabindex="-1" href="#">Подробнее</a>
+              <a class="button button-main" href="#">Подробнее</a>
               <button class="button button-accent button-card-favorite" type="submit">В избранное</button>
               <p class="stars stars-3"><span class="visually-hidden">3 звезды</span></p>
               <p class="hotel-rating">Рейтинг: 6,9</p>
             </li>
             <li class="catalog-list-item">
-              <a class="catalog-list-link" href="#">
+              <a class="catalog-list-link" tabindex="-1" href="#">
                 <img class="catalog-hotel-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
                   alt="Красные скалы на фоне звезного неба">
               </a>
-              <a class="catalog-list-link-title" href="#">
+              <a class="catalog-list-link-title" tabindex="-1" href="#">
                 <h3 class="catalog-hotel-title">GreenTree Inn</h3>
               </a>
               <p class="description-hotel">Гостиница</p>
               <b class="price">От 1500 ₽</b>
-              <a class="button button-main" tabindex="-1" href="#">Подробнее</a>
+              <a class="button button-main" href="#">Подробнее</a>
               <button class="button button-accent button-card-favorite" type="submit">В избранное</button>
               <p class="stars stars-2"><span class="visually-hidden">2 звезды</span></p>
               <p class="hotel-rating">Рейтинг: 5,0</p>
@@ -206,11 +209,11 @@
           <section class="pagination">
             <h2 class="visually-hidden">Пагинация по каталогу</h2>
             <ul class="pagination-list">
-              <li class="pagination-item"><a class="pagination-link current-pagination" href="#">1</a></li>
+              <li class="pagination-item"><a class="pagination-link current-pagination">1</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-              <li class="pagination-item"><span class="pagination-link">...</span></li>
+              <li class="pagination-item"><span class="pagination-more">...</span></li>
               <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
             </ul>
           </section>

@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" data-test="header">
         <nav class="navigation">
           <a class="header-logo" href="index.html">
             <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
@@ -27,7 +29,6 @@
             </li>
           </ul>
         </nav>
-
         <nav class="navigation-user">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -35,7 +36,7 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-favorite">
               <a class="navigation-link-favorite" href="#">
                 <span class="visually-hidden">В избранном</span>
                 <span class="liked-number">12</span>
@@ -47,8 +48,7 @@
           </ul>
         </nav>
       </header>
-
-      <main class="main-container">
+      <main class="main-container" data-test="main">
         <section class="search-hotel">
           <h1 class="search-hotel-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -60,10 +60,10 @@
               <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <section class="catalog-parameters">
+          <section class="catalog-parameters" data-test="filter">
             <h2 class="visually-hidden title">Параметры поиска</h2>
             <form class="search-parameters" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="parameters-form">
+              <div class="filters-group">
                 <fieldset class="parameters">
                   <legend class="parameters-title">Инфраструктура:</legend>
                   <ul class="parameters-list">
@@ -84,7 +84,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="parameters">
-                  <legend class="parameters-title">Тип жилья:</legend>
+                  <legend class="parameters-title">Тип Жилья:</legend>
                   <ul class="parameters-list">
                     <li class="parameters-item">
                       <label class="accommodation-label"><input class="accommodation-item" type="radio"
@@ -102,21 +102,39 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="parameters-form">
-                <fieldset class="parameters">
+              <div class="filters-group-price">
+                <fieldset class="price-filter">
                   <legend class="parameters-title">Стоимость, ₽:</legend>
+                  <div class="price-container">
+                    <label class="price-label"><span class="price-label-text">От</span>
+                      <input class="price-input field min-price" type="number" name="min-price" value="0">
+                    </label>
+                    <label class="price-label"><span class="price-label-text">До</span>
+                      <input class="price-input field max-price" type="number" name="max-price" value="9000">
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left:0; width:226px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Минимум</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Максимум</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
-                <div class="buttons-container">
-                  <button class="button button-accent" type="submit">Применить</button>
-                  <button class="button button-reset" type="reset">Сбросить</button>
-                </div>
+                <fieldset class="buttons-filter">
+                  <div class="buttons-container">
+                    <button class="button button-accent" type="submit">Применить</button>
+                    <button class="button button-reset" type="reset">Сбросить</button>
+                  </div>
+                </fieldset>
               </div>
-
-
             </form>
           </section>
         </section>
-        <section class="sorting-menu">
+        <section class="sorting-menu" data-test="catalog">
           <h2 class="visually-hidden title">Результаты поиска</h2>
           <p class="title search-result">Найдено гостиниц: 38</p>
           <label for="sorting" class="visually-hidden">Сортировка результатов поиска</label>
@@ -217,9 +235,8 @@
               <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
             </ul>
           </section>
-
         </section>
-        <section class="subscription-inner">
+        <section class="subscription-inner" data-test="subscribe">
           <h2 class="title">Подпишитесь на рассылку</h2>
           <p class="description subscribe-description">Только полезная информация и никакого спама, <br>честное
             бойскаутское!
@@ -231,27 +248,28 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">VKontakte</span></a>
+          <li>
+            <a class="social-link social-vk" target="_blank" rel="noreferrer noopener"
+              href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span></a>
           </li>
-          <li class="social-item">
-            <a class="social-link social-telegram" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Telegram</span>
+          <li>
+            <a class="social-link social-telegram" target="_blank" rel="noreferrer noopener"
+              href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">YouTube</span>
+          <li>
+            <a class="social-link social-youtube" target="_blank" rel="noreferrer noopener"
+              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
         <a class="contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="academy-logo-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Логотип
+        <a class="academy-logo-link" target="_blank" rel="noreferrer noopener" href="https://htmlacademy.ru/"><span
+            class="visually-hidden">Логотип
             HTML-Academy</span></a>
       </footer>
     </div>
-
   </body>
